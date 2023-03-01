@@ -1,0 +1,27 @@
+{
+  "extends": "@shopify/typescript-configs/library",
+  "compilerOptions": {
+    "module": "NodeNext",
+    "target": "ESNext",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "noImplicitAny": true,
+    "noUnusedParameters": true,
+    "isolatedModules": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noEmit": true
+  },
+  "include": ["src"],
+  "exclude": ["coverage", "dist", "node_modules"]
+}

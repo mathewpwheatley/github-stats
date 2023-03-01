@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "plugin:@shopify/typescript",
+    "plugin:@shopify/typescript-type-checking",
+    "plugin:@shopify/node",
+    "react-app",
+    "react-app/jest"
+  ],
+  "plugins": ["prettier"],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "@typescript-eslint/member-delimiter-style": "off",
+    "prettier/prettier": "error"
+  }
+}
