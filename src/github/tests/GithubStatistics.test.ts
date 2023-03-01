@@ -33,7 +33,10 @@ describe('GithubStatistics', () => {
     });
 
     describe('setLogin', () => {
-      const testFetch: GithubStatistics = new GithubStatistics('kramer', 'shopify');
+      const testFetch: GithubStatistics = new GithubStatistics(
+        'kramer',
+        'shopify',
+      );
       it('updates the login', () => {
         expect(testFetch.getLogin).toBe('kramer');
         testFetch.setLogin('seinfield');
@@ -42,7 +45,10 @@ describe('GithubStatistics', () => {
     });
 
     describe('setOrganization', () => {
-      const testFetch: GithubStatistics = new GithubStatistics('kramer', 'shopify');
+      const testFetch: GithubStatistics = new GithubStatistics(
+        'kramer',
+        'shopify',
+      );
       it('updates the organization', () => {
         expect(testFetch.getOrganization).toBe('shopify');
         testFetch.setOrganization('self-employed');
